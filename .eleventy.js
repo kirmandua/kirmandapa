@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
       includes: "_includes"
     },
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "njk",
+    pathPrefix: process.env.PATH_PREFIX || "/"
   };
 };

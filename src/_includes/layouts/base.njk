@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if title %}{{ title }} — {% endif %}KIR MAN 2 Kota Bogor</title>
 <meta name="description" content="{{ description if description else site.tagline }}">
-<link rel="icon" href="/assets/logo.png" type="image/png">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="{{ '/assets/logo.png' | url }}" type="image/png">
+<link rel="stylesheet" href="{{ '/assets/style.css' | url }}">
 </head>
 <body>
 
@@ -19,6 +19,6 @@
 {% include "partials/footer.njk" %}
 
 <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
-<script src="/assets/script.js"></script>
+<script src="{{ '/assets/script.js' | url }}"></script>
 </body>
 </html>
