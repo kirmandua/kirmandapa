@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/.nojekyll");
 
   eleventyConfig.addFilter("limit", function(arr, count) {
     return arr ? arr.slice(0, count) : [];
