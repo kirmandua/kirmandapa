@@ -1,0 +1,52 @@
+{
+  "name": "KIR MAN 2 BOGOR",
+  "subtitle": "Kota Bogor, Jawa Barat",
+  "tagline": "Kelompok Ilmiah Remaja MAN 2 Kota Bogor — wadah pengembangan riset mandiri, inovatif, dan solutif sejak 16 Februari 2005.",
+  "email": "kir@man2kotabogor.sch.id",
+  "schoolUrl": "https://www.man2kotabogor.sch.id",
+  "year": 2026,
+  "stats": [
+    { "number": 11, "label": "PROPOSAL LOLOS OPSI 2025" },
+    { "number": 7, "label": "PRESTASI NASIONAL & KOTA" },
+    { "number": 3, "label": "DIVISI RISET UTAMA" },
+    { "number": 2005, "label": "TAHUN DIDIRIKAN (16 FEB)" }
+  ],
+  "featuredProjects": [
+    {
+      "category": "Teknologi & Rekayasa",
+      "title": "Smart-Vision Pedagogy: Edge AI Kacamata Pintar",
+      "desc": "Kacamata pintar berbasis Edge AI untuk meningkatkan aksesibilitas dan interaksi guru penyandang disabilitas netra dalam pembelajaran inklusif.",
+      "stage": "Riset OPSI 2025"
+    },
+    {
+      "category": "Teknologi & Rekayasa",
+      "title": "MORSAFE: Filtrasi Air Portabel Biji Kelor",
+      "desc": "Sistem penyaringan air portabel bertenaga surya berbasis biji kelor (Moringa oleifera) dengan sensor kekeruhan untuk kondisi darurat bencana.",
+      "stage": "Riset OPSI 2025"
+    },
+    {
+      "category": "Sains Alam",
+      "title": "Biokomposit Miselium Jamur Tiram & Tongkol Jagung",
+      "desc": "Inovasi bahan kemasan ramah lingkungan pengganti EPS Styrofoam berbasis miselium jamur tiram dan limbah pertanian.",
+      "stage": "Riset OPSI 2025"
+    }
+  ],
+  "hero": {
+    "eyebrow": "CATATAN LAPANGAN NO. 01 — BERANDA",
+    "title": "Meneliti, berinovasi,<br>dan <em>menginspirasi</em>.",
+    "lede": "KIR MAN 2 Kota Bogor didirikan pada 16 Februari 2005 sebagai wadah riset siswa madrasah — mulai dari penelitian sains alam di laboratorium, rekayasa teknologi Edge AI/IoT, hingga analisis sains sosial."
+  },
+  "profileBrief": {
+    "eyebrow": "Spesimen 02 — Profil Singkat",
+    "title": "Wadah pengembangan riset yang mandiri, inovatif, dan solutif.",
+    "desc": "KIR MAN 2 Kota Bogor berada di bawah naungan Wakil Kepala Bidang Kesiswaan MAN 2 Kota Bogor. Kami membimbing siswa melalui metode Project-Based Learning (PBL), workshop berkelanjutan, dan kunjungan riset ke universitas serta instansi profesional.",
+    "visi": "Menjadikan KIR MAN 2 Kota Bogor sebagai wadah pengembangan riset yang mandiri, inovatif dan solutif melalui pengembangan skill nyata yang bermanfaat bagi masyarakat.",
+    "misi": "Implementasi Project-Based Learning (PBL), literasi sains melalui Science Creation Event (SCE), KIR Skill-Up & Visit ke universitas/instansi profesional, serta kemandirian finansial organisasi."
+  },
+  "highlight": {
+    "stamp": "Juara 2<br>Nasional",
+    "tag": "Agri-ET Competition 2025 IPB University",
+    "title": "KIR MAN 2 Kota Bogor raih Juara 2 Nasional & 11 Proposal Lolos OPSI 2025!",
+    "desc": "Selamat kepada tim riset KIR MAN 2 Kota Bogor atas capaian Juara 2 Nasional di IPB University serta 11 proposal penelitian yang berhasil lolos ke tahap riset OPSI Puspresnas 2025."
+  }
+}

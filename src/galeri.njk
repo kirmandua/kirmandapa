@@ -1,0 +1,84 @@
+---
+layout: layouts/base.njk
+title: "Galeri Karya & Riset"
+description: "Kumpulan karya tulis ilmiah, prototipe alat, dan poster penelitian anggota KIR MAN 2 Kota Bogor."
+crumb: "Galeri Karya, Riset & Inovasi"
+---
+
+{% include "partials/hero.njk" %}
+
+<!-- JURNAL / ARTIKEL ILMIAH -->
+<section class="section section-alt" id="jurnal">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label">Spesimen 07 — Jurnal & Artikel Ilmiah Remaja</div>
+      <h2>Karya Tulis Ilmiah anggota</h2>
+      <p>Ringkasan abstrak dari KTI yang telah disusun dan sebagian telah dilombakan.</p>
+    </div>
+
+    <div class="filter-bar" data-filter-group=".journal-item">
+      <button class="filter-btn active" data-filter="semua">Semua</button>
+      <button class="filter-btn" data-filter="alam">Sains Alam</button>
+      <button class="filter-btn" data-filter="teknologi">Teknologi & Rekayasa</button>
+      <button class="filter-btn" data-filter="sosial">Sains Sosial</button>
+    </div>
+
+    <div class="journal-list">
+      {% for entry in journal %}
+        {% include "partials/journal-item.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- PROTOTIPE & ALAT -->
+<section class="section" id="prototipe">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label amber">Spesimen 08 — Proyek Prototipe & Alat</div>
+      <h2>Dari gagasan menjadi purwarupa</h2>
+      <p>Klik setiap proyek untuk melihat cara kerjanya secara singkat.</p>
+    </div>
+
+    <div class="card-grid" style="margin-bottom:12px;">
+      {% for p in prototypes %}
+      <div class="card reveal">
+        <div class="card-photo"><span>📷 {{ p.photo }}</span></div>
+        <div class="card-body">
+          <span class="card-tag{% if p.tagClass %} {{ p.tagClass }}{% endif %}">{{ p.category }}</span>
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top:36px;">
+      {% for p in prototypes %}
+      <div class="accordion-item">
+        <button class="accordion-trigger"><span>{{ p.accordion.q }}</span><span class="plus">+</span></button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">{{ p.accordion.a }}</div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- POSTER -->
+<section class="section section-alt" id="poster">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label coral">Spesimen 09 — Poster Penelitian</div>
+      <h2>Poster yang dipakai di pameran & lomba</h2>
+      <p>Versi visual ringkas dari riset kami, dirancang untuk sesi presentasi dan pameran sains.</p>
+    </div>
+    <div class="poster-grid">
+      {% for poster in posters %}
+      <div class="poster-item reveal">
+        <div class="poster-photo"><span>📄 {{ poster.label }}</span></div>
+        <div class="poster-cap">{{ poster.caption }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

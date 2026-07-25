@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+title: "Pusat Sumber Daya"
+description: "Template KTI, rekomendasi jurnal, tools riset, dan jadwal lomba ilmiah dari KIR MAN 2 Kota Bogor."
+crumb: "Pusat Sumber Daya"
+---
+
+{% include "partials/hero.njk" %}
+
+<!-- TEMPLATE & PANDUAN -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label">Spesimen 14 — Template & Panduan KTI</div>
+      <h2>Mulai KTI-mu dari sini</h2>
+      <p>Berkas siap pakai supaya kamu tidak perlu menyusun format dari nol.</p>
+    </div>
+    <div class="resource-grid">
+      {% for res in resources %}
+        {% include "partials/resource-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- REKOMENDASI JURNAL & TOOLS -->
+<section class="section">
+  <div class="container">
+    <div class="hero-grid" style="align-items:flex-start;">
+      <div class="reveal">
+        <div class="specimen-label amber">Spesimen 15 — Jurnal & Tools Riset</div>
+        <h2 style="font-family:var(--font-display); font-weight:600; font-size:clamp(24px,3.2vw,32px);">Sumber referensi tepercaya</h2>
+        <p style="margin-top:14px; color:var(--ink-soft);">Kumpulan situs pencarian jurnal dan alat bantu riset yang biasa dipakai anggota KIR MAN 2 Kota Bogor.</p>
+        <ul class="link-list" style="margin-top:24px;">
+          <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar<span class="l-desc">Mesin pencari literatur akademik lintas disiplin</span><span class="arrow">↗</span></a></li>
+          <li><a href="https://www.researchgate.net" target="_blank" rel="noopener">ResearchGate<span class="l-desc">Jaringan sosial untuk peneliti & jurnal ilmiah</span><span class="arrow">↗</span></a></li>
+          <li><a href="https://garuda.kemdikbud.go.id" target="_blank" rel="noopener">Garuda Kemdikbud<span class="l-desc">Portal jurnal ilmiah nasional Indonesia</span><span class="arrow">↗</span></a></li>
+          <li><a href="https://www.mendeley.com" target="_blank" rel="noopener">Mendeley<span class="l-desc">Alat bantu mengelola referensi & sitasi otomatis</span><span class="arrow">↗</span></a></li>
+          <li><a href="https://www.zotero.org" target="_blank" rel="noopener">Zotero<span class="l-desc">Alternatif gratis untuk manajemen daftar pustaka</span><span class="arrow">↗</span></a></li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <div class="specimen-label coral">Spesimen 16 — Jadwal & Info Lomba</div>
+        <h3 style="font-family:var(--font-display); font-size:20px; margin-bottom:16px;">Kompetisi yang sedang & akan dibuka</h3>
+        <table class="lomba-table">
+          <thead>
+            <tr><th>Lomba</th><th>Batas Daftar</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            {% for comp in competitions %}
+            <tr>
+              <td><b>{{ comp.name }}</b><br><span style="color:var(--ink-faint); font-size:12.5px;">{{ comp.level }}</span></td>
+              <td>{{ comp.deadline }}</td>
+              <td><span class="status-badge {{ comp.statusClass }}">{{ comp.status }}</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <p class="form-note">Info lomba diperbarui rutin oleh pengurus. Tanyakan ke koordinator divisimu untuk pendampingan pendaftaran.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+[
+  {
+    "category": "Teknologi & Rekayasa",
+    "title": "EcoSense — Monitor Kualitas Udara",
+    "desc": "Perangkat IoT pemantau CO₂ dan partikel debu di ruang kelas, terhubung dasbor web sederhana.",
+    "photo": "EcoSense",
+    "tagClass": "",
+    "accordion": {
+      "q": "Bagaimana cara kerja EcoSense?",
+      "a": "Sensor MQ-135 dan PM2.5 membaca kadar CO₂ dan partikel debu setiap 10 detik. Data dikirim mikrokontroler ke dasbor web melalui Wi-Fi, lalu ditampilkan sebagai grafik real-time. Jika kadar melewati ambang aman, sistem mengirim notifikasi ke guru piket."
+    }
+  },
+  {
+    "category": "Sains Alam",
+    "title": "HidroBot — Penyiram Tanaman Otomatis",
+    "desc": "Sistem irigasi otomatis berbasis kelembapan tanah untuk kebun mini sekolah.",
+    "photo": "HidroBot",
+    "tagClass": "amber",
+    "accordion": {
+      "q": "Bagaimana cara kerja HidroBot?",
+      "a": "Sensor kelembapan tanah mendeteksi tingkat kekeringan media tanam. Saat nilai berada di bawah ambang, pompa air mini otomatis menyala selama durasi yang telah dikalibrasi, lalu berhenti sendiri — menghemat air dibanding penyiraman manual."
+    }
+  },
+  {
+    "category": "Sains Sosial",
+    "title": "SurveiKu — Aplikasi Survei Kelas",
+    "desc": "Aplikasi ringan untuk mengumpulkan dan memvisualisasikan data survei sosial antarkelas.",
+    "photo": "SurveiKu",
+    "tagClass": "coral",
+    "accordion": {
+      "q": "Bagaimana cara kerja SurveiKu?",
+      "a": "Responden mengisi kuesioner lewat tautan singkat, jawaban tersimpan otomatis ke spreadsheet, dan aplikasi menghasilkan grafik ringkasan instan — memudahkan divisi Sains Sosial menganalisis data tanpa rekap manual."
+    }
+  }
+]

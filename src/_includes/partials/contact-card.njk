@@ -1,0 +1,7 @@
+<div class="contact-card reveal">
+  <div class="c-icon">{{ card.icon }}</div>
+  <h4>{{ card.title }}</h4>
+  {% if card.content|safe %}
+  <p>{{ card.content|safe }}</p>
+  {% endif %}
+</div>

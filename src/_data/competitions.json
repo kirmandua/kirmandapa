@@ -1,0 +1,7 @@
+[
+  { "name": "OPSI 2026", "level": "Tingkat Nasional", "deadline": "10 Agustus 2026", "status": "Dibuka", "statusClass": "status-open" },
+  { "name": "LKTIN Cendekia Muda", "level": "Tingkat Nasional", "deadline": "25 Agustus 2026", "status": "Dibuka", "statusClass": "status-open" },
+  { "name": "Pekan Ilmiah Remaja Kota", "level": "Tingkat Kota", "deadline": "5 September 2026", "status": "Segera Dibuka", "statusClass": "status-soon" },
+  { "name": "ISPrO 2026", "level": "Tingkat Internasional", "deadline": "1 Oktober 2026", "status": "Segera Dibuka", "statusClass": "status-soon" },
+  { "name": "KSN Bidang Riset 2025", "level": "Tingkat Nasional", "deadline": "Telah lewat", "status": "Ditutup", "statusClass": "status-closed" }
+]

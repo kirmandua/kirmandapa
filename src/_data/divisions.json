@@ -1,0 +1,20 @@
+[
+  {
+    "icon": "🧪",
+    "name": "Sains Alam / IPA",
+    "desc": "Eksplorasi fenomena alam lewat eksperimen laboratorium dan riset lapangan.",
+    "topics": ["Fisika", "Biologi", "Kimia"]
+  },
+  {
+    "icon": "🤖",
+    "name": "Teknologi & Rekayasa",
+    "desc": "Merancang dan membangun solusi berbasis teknologi untuk masalah nyata.",
+    "topics": ["Robotika", "Kecerdasan Buatan", "IoT", "Pemrograman"]
+  },
+  {
+    "icon": "🧭",
+    "name": "Sains Sosial & Humaniora",
+    "desc": "Meneliti perilaku, struktur sosial, dan dinamika masyarakat di sekitar kita.",
+    "topics": ["Sosiologi", "Psikologi", "Ekonomi"]
+  }
+]

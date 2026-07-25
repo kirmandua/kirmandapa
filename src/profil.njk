@@ -1,0 +1,124 @@
+---
+layout: layouts/base.njk
+title: "Profil & Struktur Organisasi"
+description: "Sejarah resmi, visi misi, struktur kepengurusan, dan divisi riset Kelompok Ilmiah Remaja MAN 2 Kota Bogor."
+crumb: "Profil & Struktur"
+---
+
+{% include "partials/hero.njk" %}
+
+<!-- SEJARAH & VISI MISI -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="hero-grid" style="align-items:flex-start;">
+      <div class="reveal">
+        {% set label = "Spesimen 04 — Sejarah Singkat" %}
+      {% include "partials/specimen-label.njk" %}
+        <h2 style="font-family:var(--font-display); font-weight:600; font-size:clamp(24px,3.2vw,32px);">Perjalanan kami, dicatat dari tahun ke tahun</h2>
+        <div class="timeline" style="margin-top:32px;">
+          {% for event in contact.timeline %}
+          <div class="timeline-item">
+            <div class="t-year">{{ event.year }}</div>
+            <h4>{{ event.title }}</h4>
+            <p>{{ event.desc }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="specimen-label amber">Visi & Misi Resmi</div>
+        <div class="card" style="margin-bottom:16px;">
+          <div class="card-body">
+            <span class="card-tag">Visi Periode Saat Ini</span>
+            <h3 style="font-size:17px; margin-top:6px;">Wadah riset mandiri, inovatif, dan solutif</h3>
+            <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.6;">"{{ site.profileBrief.visi }}"</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag amber">Misi Utama</span>
+            <ul style="display:flex; flex-direction:column; gap:12px; margin-top:8px;">
+              <li style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong>1. Implementasi Project-Based Learning (PBL):</strong> Mengarahkan anggota menghasilkan karya nyata dari proposal, penelitian, hingga penulisan KTI.</li>
+              <li style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong>2. Literasi Sains via Science Creation Event (SCE):</strong> Pameran proyek riset anggota dan lomba sains pelajar.</li>
+              <li style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong>3. KIR Skill-Up & Visit:</strong> Workshop berkelanjutan & kunjungan riset ke universitas atau instansi profesional.</li>
+              <li style="font-size:14px; color:var(--ink-soft); line-height:1.5;"><strong>4. Kemandirian Finansial:</strong> Membangun sistem pendanaan mandiri lewat kewirausahaan kreatif.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITAS & FILOSOFI LAMBANG -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal center">
+      <div class="specimen-label sky">Spesimen 05 — Identitas & Atribut</div>
+      <h2>Lambang & Asas Organisasi</h2>
+      <p>KIR MAN 2 Kota Bogor berdiri pada 16 Februari 2005 di bawah naungan Waka Kesiswaan MAN 2 Kota Bogor.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-body">
+          <span class="card-tag sky">Asas & Landasan</span>
+          <h3>Berilmiahan & Berakhlaqul Karimah</h3>
+          <p>Berlandaskan Pancasila & UUD 1945. Mengedepankan sikap ilmiah, kritis, dan inovatif yang disertai akhlaqul karimah serta musyawarah mufakat.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-body">
+          <span class="card-tag coral">Lambang Resmi</span>
+          <h3>Erlenmeyer & Roda Gir Merah Bata</h3>
+          <p>Lingkaran biru bertuliskan 'Kelompok Ilmiah Remaja MAN 2 Kota Bogor', dikelilingi roda gir merah bata dengan labu Erlenmeyer di titik pusatnya.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-body">
+          <span class="card-tag amber">Bendera & Musyawarah</span>
+          <h3>Benderang Putih 3:2</h3>
+          <p>Bendera berlatar putih dengan lambang KIR di tengah. Musyawarah Pleno Anggota diadakan setahun sekali sebagai pemegang kekuasaan tertinggi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRUKTUR KEPENGURUSAN -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label">Spesimen 06 — Struktur Kepengurusan</div>
+      <h2>Pengurus Aktif Periode Saat Ini</h2>
+      <p>Dibimbing oleh Pembina Utama & Pembina Latih, serta dipimpin oleh Ketua Umum dan BPH.</p>
+    </div>
+    <div class="org-grid">
+      {% for member in team %}
+        {% include "partials/org-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- DIVISI -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label coral">Spesimen 07 — Bidang / Divisi Riset</div>
+      <h2>Tiga jalur, satu semangat meneliti</h2>
+      <p>Setiap anggota memilih satu divisi sesuai minat sebagai rumah utama risetnya — meski kolaborasi lintas divisi sangat terbuka.</p>
+    </div>
+    <div class="division-grid">
+      {% for div in divisions %}
+        {% include "partials/division-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% set heading = "Tertarik masuk salah satu divisi?" %}
+{% set text = "Kamu bisa mencoba dulu lewat sesi open trial sebelum menentukan pilihan divisi." %}
+{% set btnUrl = "/kontak/" %}
+{% set btnLabel = "Daftar Sekarang →" %}
+{% include "partials/cta-band.njk" %}

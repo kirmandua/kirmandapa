@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+title: "Prestasi & Rekam Jejak"
+description: "Daftar kejuaraan dan testimoni alumni Kelompok Ilmiah Remaja MAN 2 Kota Bogor."
+crumb: "Prestasi & Rekam Jejak"
+---
+
+{% include "partials/hero.njk" %}
+
+<!-- DAFTAR KEJUARAAN -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label">Spesimen 10 — Daftar Kejuaraan</div>
+      <h2>Rekam jejak kompetisi</h2>
+      <p>Terkumpul dari tingkat kota hingga internasional, hasil kerja keras anggota lintas angkatan.</p>
+    </div>
+
+    <div class="filter-bar" data-filter-group=".achv-card">
+      <button class="filter-btn active" data-filter="semua">Semua Tingkat</button>
+      <button class="filter-btn" data-filter="kota">Kota</button>
+      <button class="filter-btn" data-filter="provinsi">Provinsi</button>
+      <button class="filter-btn" data-filter="nasional">Nasional</button>
+      <button class="filter-btn" data-filter="internasional">Internasional</button>
+    </div>
+
+    <div class="achv-cards" style="margin-bottom:16px;">
+      {% for achv in achievements %}
+        {% set rank = achv.rank %}
+        {% set class = achv.stampClass %}
+        {% include "partials/achv-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI ALUMNI -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label coral">Spesimen 11 — Testimoni Alumni</div>
+      <h2>Kata mereka yang sudah lebih dulu melangkah</h2>
+      <p>Pengalaman di KIR ternyata terus terpakai jauh setelah lulus SMA.</p>
+    </div>
+    <div class="testi-grid">
+      {% for t in testimonials %}
+      <div class="testi-card reveal">
+        <p class="testi-quote">{{ t.quote }}</p>
+        <div class="testi-who">
+          <div class="testi-avatar">{{ t.avatar }}</div>
+          <div><b>{{ t.name }}</b><span>{{ t.role }}</span></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% set heading = "Mau jadi bagian dari rekam jejak berikutnya?" %}
+{% set text = "Kompetisi ilmiah berikutnya menunggu tim darimu." %}
+{% set btnUrl = "/sumber-daya/" %}
+{% set btnLabel = "Lihat Jadwal Lomba →" %}
+{% include "partials/cta-band.njk" %}

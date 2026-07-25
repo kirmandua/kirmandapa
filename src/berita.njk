@@ -1,0 +1,58 @@
+---
+layout: layouts/base.njk
+title: "Berita & Kegiatan"
+description: "Liputan kegiatan dan artikel edukasi sains populer dari Kelompok Ilmiah Remaja MAN 2 Kota Bogor."
+crumb: "Berita & Kegiatan"
+---
+
+{% include "partials/hero.njk" %}
+
+<!-- LIPUTAN KEGIATAN -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label">Spesimen 12 — Liputan Kegiatan</div>
+      <h2>Dari Science Camp sampai kunjungan laboratorium</h2>
+      <p>Dokumentasi program rutin dan acara khusus sepanjang tahun ajaran.</p>
+    </div>
+    <div class="blog-grid">
+      {% for article in collections.berita | reverse %}
+      <div class="card reveal">
+        <div class="card-photo"><span>📷 {{ article.data.thumb if article.data.thumb else "Kegiatan KIR" }}</span></div>
+        <div class="card-body">
+          <span class="card-tag{% if article.data.tagClass %} {{ article.data.tagClass }}{% endif %}">{{ article.data.tags[0] if article.data.tags else "Kegiatan" }}</span>
+          <h3>{{ article.data.title }}</h3>
+          <p>{{ article.data.excerpt if article.data.excerpt else "" }}</p>
+          <div class="card-foot">
+            <span>{{ article.date | readableDate }}</span>
+            <a href="{{ article.url }}" class="btn-ghost">Baca →</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ARTIKEL EDUKASI SAINS POPULER -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label amber">Spesimen 13 — Edukasi Sains Populer</div>
+      <h2>Tulisan santai seputar sains sehari-hari</h2>
+      <p>Ditulis anggota untuk pembaca umum — nggak perlu latar belakang sains untuk menikmatinya.</p>
+    </div>
+    <div class="blog-grid">
+      {% for article in contact.sainsPopuler %}
+      <div class="card reveal">
+        <div class="card-photo"><span>📷 {{ article.photo }}</span></div>
+        <div class="card-body">
+          <span class="card-tag{% if article.tagClass %} {{ article.tagClass }}{% endif %}">{{ article.category }}</span>
+          <h3>{{ article.title }}</h3>
+          <div class="card-foot"><span>Ditulis oleh {{ article.author }}</span><a href="#" class="btn-ghost">Baca →</a></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

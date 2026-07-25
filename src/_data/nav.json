@@ -1,0 +1,9 @@
+[
+  { "label": "Beranda", "url": "/" },
+  { "label": "Profil", "url": "/profil/" },
+  { "label": "Galeri", "url": "/galeri/" },
+  { "label": "Prestasi", "url": "/prestasi/" },
+  { "label": "Berita", "url": "/berita/" },
+  { "label": "Sumber Daya", "url": "/sumber-daya/" },
+  { "label": "Gabung", "url": "/kontak/", "cta": true }
+]

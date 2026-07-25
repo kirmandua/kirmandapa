@@ -1,0 +1,156 @@
+---
+layout: layouts/base.njk
+title: "Kelompok Ilmiah Remaja MAN 2 Kota Bogor"
+description: "Kelompok Ilmiah Remaja MAN 2 Kota Bogor. Meneliti, berinovasi, dan menginspirasi lewat sains, teknologi, dan riset sosial."
+---
+
+<!-- HERO -->
+<section class="hero grid-texture">
+  <div class="container hero-grid">
+    <div class="reveal in">
+      <div class="hero-eyebrow">{{ site.hero.eyebrow }}</div>
+      <h1>{{ site.hero.title | safe }}</h1>
+      <p class="lede">{{ site.hero.lede }}</p>
+      <div class="hero-actions">
+        <a href="/kontak/" class="btn btn-primary">Gabung Sekarang →</a>
+        <a href="/galeri/" class="btn btn-outline">Lihat Karya Kami</a>
+      </div>
+    </div>
+
+    <div class="reveal in">
+      <div class="notebook-page">
+        <span class="tape tape-tl"></span>
+        <span class="tape tape-tr"></span>
+        <div class="notebook-photo logo-slot"><img src="/assets/logo.png" alt="Lambang KIR MAN 2 Kota Bogor" class="logo-seal"></div>
+        <div class="sticky-grid">
+          {% for stat in site.stats %}
+          <div class="sticky-note"><b>{{ stat.number }}</b><span>{{ stat.label }}</span></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFIL SINGKAT -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="hero-grid" style="align-items:flex-start;">
+      <div class="reveal">
+        {% set label = "Spesimen 02 — Profil Singkat" %}
+        {% include "partials/specimen-label.njk" %}
+        <h2 style="font-family:var(--font-display); font-weight:600; font-size:clamp(26px,3.6vw,36px); line-height:1.2;">{{ site.profileBrief.title }}</h2>
+        <p style="margin-top:16px; color:var(--ink-soft); font-size:16px;">{{ site.profileBrief.desc }}</p>
+      </div>
+      <div class="reveal">
+        <div class="card" style="margin-bottom:18px;">
+          <div class="card-body">
+            <span class="card-tag">Visi</span>
+            <p style="color:var(--ink); font-size:15px;">{{ site.profileBrief.visi }}</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag amber">Misi</span>
+            <p style="color:var(--ink); font-size:15px;">{{ site.profileBrief.misi }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHT PRESTASI -->
+<section class="section">
+  <div class="container">
+    <div class="specimen-label coral">Kabar Terbaru</div>
+    <div class="banner-highlight reveal">
+      <div class="stamp">{{ site.highlight.stamp }}</div>
+      <div class="bh-text">
+        <div class="tag">{{ site.highlight.tag }}</div>
+        <h3>{{ site.highlight.title }}</h3>
+        <p>{{ site.highlight.desc }}</p>
+      </div>
+      <a href="/prestasi/" class="btn btn-outline" style="border-color:var(--white); color:var(--white);">Semua Prestasi →</a>
+    </div>
+  </div>
+</section>
+
+<!-- KARYA TERBARU -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      {% set label = "Spesimen 03 — Karya Terbaru" %}
+      {% include "partials/specimen-label.njk" %}
+      <h2>Proyek yang sedang berjalan di meja kerja kami</h2>
+      <p>Tiga karya pilihan dari puluhan proyek aktif anggota KIR MAN 2 Kota Bogor sepanjang semester ini.</p>
+    </div>
+    <div class="card-grid">
+      {% for project in site.featuredProjects %}
+      <div class="card reveal">
+        <div class="card-photo"><span>📷 {{ project.title }}</span></div>
+        <div class="card-body">
+          <span class="card-tag{% if project.category == 'Sains Alam' %} amber{% elseif project.category == 'Sains Sosial & Humaniora' %} coral{% endif %}">{{ project.category }}</span>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.desc }}</p>
+          <div class="card-foot"><span>Tahap: {{ project.stage }}</span><a href="/galeri/" class="btn-ghost">Detail →</a></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section-tight">
+  <div class="container">
+    <div class="stat-grid">
+      {% for stat in site.stats %}
+      <div class="stat-card reveal"><b>{{ stat.number }}</b><span>{{ stat.label }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- BERITA TERBARU (from collection) -->
+{% set latest = collections.berita | reverse | limit(3) %}
+{% if latest.length %}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="specimen-label amber">Berita Terbaru</div>
+      <h2>Catatan kegiatan terbaru</h2>
+      <p>Liputan program kerja dan aktivitas rutin anggota KIR.</p>
+    </div>
+    <div class="blog-grid">
+      {% for article in latest %}
+      <div class="card reveal">
+        <div class="card-photo"><span>📷 {{ article.data.thumb if article.data.thumb else "Berita KIR" }}</span></div>
+        <div class="card-body">
+          <span class="card-tag">{{ article.data.tags[0] if article.data.tags else "Kegiatan" }}</span>
+          <h3>{{ article.data.title }}</h3>
+          <p>{{ article.data.excerpt if article.data.excerpt else "" }}</p>
+          <div class="card-foot">
+            <span>{{ article.date | readableDate }}</span>
+            <a href="{{ article.url }}" class="btn-ghost">Baca →</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h3>Punya rasa penasaran yang belum tersalurkan?</h3>
+        <p>Pendaftaran anggota baru KIR MAN 2 Kota Bogor dibuka setiap awal semester. Tidak perlu jago matematika — cukup bawa rasa ingin tahumu.</p>
+      </div>
+      <a href="/kontak/" class="btn btn-primary">Daftar Jadi Anggota →</a>
+    </div>
+  </div>
+</section>

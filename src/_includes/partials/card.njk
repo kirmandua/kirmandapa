@@ -1,0 +1,11 @@
+<div class="card reveal">
+  <div class="card-photo"><span>{{ photo }}</span></div>
+  <div class="card-body">
+    <span class="card-tag{% if tagClass %} {{ tagClass }}{% endif %}">{{ tag }}</span>
+    <h3>{{ title }}</h3>
+    <p>{{ desc }}</p>
+    {% if stage %}
+    <div class="card-foot"><span>Tahap: {{ stage }}</span><a href="{{ detailUrl or '#' }}" class="btn-ghost">Detail →</a></div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "cards": [
+    { "icon": "✉️", "title": "Email Resmi", "content": "<a href=\"mailto:kir@man2kotabogor.sch.id\">kir@man2kotabogor.sch.id</a>" },
+    { "icon": "📍", "title": "Lokasi Sekolah", "content": "Jl. Raya Pajajaran No. 6, Baranangsiang, Kec. Bogor Timur, Kota Bogor, Jawa Barat 16143 — Sekretariat KIR, Gedung Laboratorium" },
+    { "icon": "🕐", "title": "Jam Sekretariat", "content": "Senin & Kamis, pukul 15.00–17.00 WIB, di ruang KIR Gedung B" }
+  ],
+  "social": [
+    { "label": "📷 Instagram — @kirmandapa", "url": "https://www.instagram.com/kirmandapa/" },
+    { "label": "▶️ YouTube — KIR MAN 2 Kota Bogor", "url": "#" },
+    { "label": "✉️ Kirim Email", "url": "mailto:kir@man2kotabogor.sch.id" },
+    { "label": "🌐 Situs Resmi Madrasah", "url": "https://www.man2kotabogor.sch.id" }
+  ],
+  "timeline": [
+    { "year": "2005", "title": "Didirikan pada 16 Februari 2005", "desc": "KIR MAN 2 Kota Bogor resmi berdiri di Bogor di bawah naungan Wakil Kepala Bidang Kesiswaan MAN 2 Kota Bogor." },
+    { "year": "2015", "title": "Pengembangan Riset & Workshop", "desc": "Penyelenggaraan workshop penulisan KTI, eksperimen sains, dan bimbingan kompetisi ilmiah secara intensif." },
+    { "year": "2025", "title": "11 Proposal Lolos OPSI & Juara IPB", "desc": "Meraih Juara 2 Agri-ET IPB University dan meloloskan 11 proposal penelitian OPSI Puspresnas ke tahap riset." },
+    { "year": "2026", "title": "Implementasi PBL & Science Creation Event", "desc": "Kepengurusan dipimpin Imam Ahmad Sujiwo fokus pada Project-Based Learning, pameran SCE, dan KIR Skill-Up & Visit." }
+  ],
+  "sainsPopuler": [
+    { "title": "Kenapa Bau Tanah Setelah Hujan Itu Menenangkan?", "author": "Naila S.", "category": "Sains Populer", "photo": "Fenomena Petrichor", "tagClass": "" },
+    { "title": "Rekomendasi Video di HP-mu: Kerja AI di Balik Layar", "author": "Bagas A.", "category": "Sains Populer", "photo": "AI Sehari-hari", "tagClass": "amber" },
+    { "title": "Kenapa Banyak Orang Salah Ingat Hal yang Sama?", "author": "Kirana M.", "category": "Sains Populer", "photo": "Efek Mandela", "tagClass": "coral" }
+  ],
+  "map": {
+    "lat": -6.606194,
+    "lng": 106.808017,
+    "zoom": 18,
+    "bbox": "106.804517%2C-6.608694%2C106.811517%2C-6.603694"
+  }
+}

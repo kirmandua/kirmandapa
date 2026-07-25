@@ -1,0 +1,90 @@
+[
+  {
+    "num": "01",
+    "category": "teknologi",
+    "title": "Smart-Vision Pedagogy: Edge AI pada Kacamata Pintar untuk Guru Disabilitas Netra",
+    "authors": "Imam Ahmad Sujiwo (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Implementasi Edge AI pada kacamata pintar untuk meningkatkan aksesibilitas dan interaksi guru penyandang disabilitas netra dalam pembelajaran inklusif. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "02",
+    "category": "teknologi",
+    "title": "MORSAFE: Sistem Filtrasi Air Portabel Bertenaga Surya Berbasis Biji Kelor",
+    "authors": "Rayyan Dhiya Respati (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Moringa-based Safe Water System dengan monitoring kekeruhan air untuk penanganan kondisi darurat bencana. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "03",
+    "category": "alam",
+    "title": "Tablet Effervescent Buah Bisbul (Diospyros blancoi) Pencegah Hipertensi",
+    "authors": "Nareswari Adkha Nashirah (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Pengembangan minuman fungsional berbasis buah bisbul lokal Bogor dengan aktivitas antioksidan tinggi untuk pencegahan hipertensi. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "04",
+    "category": "alam",
+    "title": "Plester Albumin Ikan Gabus & Daun Binahong untuk Pengobatan Luka Bakar",
+    "authors": "Inayah Syauqi Kamila (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Pemanfaatan albumin Channa striata dan ekstrak Anredera cordifolia sebagai bahan aktif plester penyembuh luka bakar. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "05",
+    "category": "alam",
+    "title": "Biokomposit Miselium Jamur Tiram & Tongkol Jagung Pengganti Styrofoam",
+    "authors": "Safira Fitria Hamidah (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Pengembangan bahan kemasan ramah lingkungan pengganti EPS (Expanded Polystyrene) berbasis limbah pertanian dan miselium Pleurotus ostreatus. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "06",
+    "category": "alam",
+    "title": "Membran Komposit Kitosan-Karbon Aktif Limbah Udang & Cangkang Sawit",
+    "authors": "Ghina Tsurraya (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Sintesis membran penyaring mikroplastik Polyethylene Terephthalate (PET) memanfaatkan limbah cangkang sawit dan kulit udang. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "07",
+    "category": "sosial",
+    "title": "Analisis Sentimen Pengguna Aplikasi Grab dengan Machine Learning Algorithms",
+    "authors": "Keysha Marissa Widodo (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Studi komparasi performa algoritma XGBoost, LightGBM, dan CatBoost dalam memetakan ulasan pengguna Playstore. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "08",
+    "category": "alam",
+    "title": "Purifikasi Air Kotor dengan Metode CERDAS (Calcium-Eggshell & Rice Husk)",
+    "authors": "Hafizhah Yasmin Siregar (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Sistem adsorpsi berbasis cangkang telur dan arang sekam padi untuk tingkatkan standar kualitas air domestik masyarakat. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "09",
+    "category": "alam",
+    "title": "LIPSTICKY: Pelarut Alami Tapai Ketan Putih Terfermentasi Pembersih Noda",
+    "authors": "Tsamara Ufairah Azka Andriani (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Inovasi pelarut alami dari tapai ketan putih terfermentasi berlebih untuk menghilangkan noda lipstik pada dinding. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "10",
+    "category": "alam",
+    "title": "Optimasi Komposisi Sekam Padi dan Kulit Pisang untuk Briket Organik",
+    "authors": "Shifa Desiyanti (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Analisis intensitas asap dan durasi pembakaran briket bio-arang berenergi ramah lingkungan. (Proposal Lolos OPSI 2025)"
+  },
+  {
+    "num": "11",
+    "category": "teknologi",
+    "title": "Implementasi Sensor Fotodioda sebagai Alat Ukur Radiasi Ultraviolet",
+    "authors": "Adithya Narraya Putra (Ketua Tim)",
+    "year": "2025",
+    "abstract": "Perancangan dan pengujian sistem sensor berbasis fotodioda untuk monitoring paparan sinar UV matahari secara akurat. (Proposal Lolos OPSI 2025)"
+  }
+]
