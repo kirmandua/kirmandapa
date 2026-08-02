@@ -73,7 +73,7 @@ input,select,textarea{ font-family:inherit; font-size:1rem; }
 .section, .section-head, .hero{ position:relative; }
 .section::before,
 .hero::before{
-  content:"KIR MAN 2 BOGOTA  \00b7  riset  \00b7  inovasi  \00b7  riset  \00b7  KIR 2026  \00b7";
+  content:"KIR MAN 2 KOTA BOGOR  \00b7  riset  \00b7  inovasi  \00b7  riset  \00b7  KIR 2026  \00b7";
   position:absolute; top:-6px; left:0; right:0;
   font-family:var(--font-display); font-weight:700; font-size:clamp(48px,9vw,120px);
   line-height:.9; letter-spacing:-0.02em; text-transform:lowercase;
