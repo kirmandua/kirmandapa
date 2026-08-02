@@ -29,17 +29,17 @@ layout: layouts/base.njk
 
         <div class="article-meta">
           <div class="meta-item">
-            <span class="meta-icon">👤</span>
+            <span class="meta-icon">{% set icon = "user" %}{% include "partials/icon.njk" %}</span>
             <span class="meta-text">{{ author if author else "Tim Redaksi KIR" }}</span>
           </div>
           <span class="meta-dot">•</span>
           <div class="meta-item">
-            <span class="meta-icon">📅</span>
+            <span class="meta-icon">{% set icon = "clock" %}{% include "partials/icon.njk" %}</span>
             <time datetime="{{ date }}">{{ date | readableDate }}</time>
           </div>
           <span class="meta-dot">•</span>
           <div class="meta-item">
-            <span class="meta-icon">🔬</span>
+            <span class="meta-icon">{% set icon = "flask" %}{% include "partials/icon.njk" %}</span>
             <span>Jurnal KIR</span>
           </div>
         </div>
@@ -54,7 +54,7 @@ layout: layouts/base.njk
 
     <div class="article-footer">
       <div class="article-author-card">
-        <div class="author-avatar">🔬</div>
+        <div class="author-avatar">{% set icon = "flask" %}{% include "partials/icon.njk" %}</div>
         <div class="author-info">
           <h4>{{ author if author else "Tim Redaksi KIR MAN 2 Kota Bogor" }}</h4>
           <p>Kelompok Ilmiah Remaja MAN 2 Kota Bogor — Wadah riset dan inovasi warga madrasah.</p>
@@ -65,10 +65,10 @@ layout: layouts/base.njk
         <span class="share-label">Bagikan Catatan Ini:</span>
         <div class="share-buttons">
           <button type="button" class="btn-share" onclick="navigator.clipboard.writeText(window.location.href); alert('Tautan artikel berhasil disalin!');">
-            📋 Salin Link
+            {% set icon = "copy" %}{% include "partials/icon.njk" %} Salin Link
           </button>
           <a href="https://api.whatsapp.com/send?text={{ title | urlencode }}%20{{ page.url | urlencode }}" target="_blank" rel="noopener" class="btn-share btn-wa">
-            💬 WhatsApp
+            {% set icon = "whatsapp" %}{% include "partials/icon.njk" %} WhatsApp
           </a>
         </div>
       </div>

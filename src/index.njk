@@ -88,7 +88,7 @@ description: "Kelompok Ilmiah Remaja MAN 2 Kota Bogor. Meneliti, berinovasi, dan
     <div class="card-grid">
       {% for project in site.featuredProjects %}
       <div class="card reveal">
-        <div class="card-photo"><span>📷 {{ project.title }}</span></div>
+        <div class="card-photo"><span>{{ project.title }}</span></div>
         <div class="card-body">
           <span class="card-tag{% if project.category == 'Sains Alam' %} amber{% elseif project.category == 'Sains Sosial & Humaniora' %} coral{% endif %}">{{ project.category }}</span>
           <h3>{{ project.title }}</h3>
@@ -125,7 +125,7 @@ description: "Kelompok Ilmiah Remaja MAN 2 Kota Bogor. Meneliti, berinovasi, dan
     <div class="blog-grid">
       {% for article in latest %}
       <div class="card reveal">
-        <div class="card-photo"><span>📷 {{ article.data.thumb if article.data.thumb else "Berita KIR" }}</span></div>
+        <div class="card-photo"><span>{{ article.data.thumb if article.data.thumb else "Berita KIR" }}</span></div>
         <div class="card-body">
           <span class="card-tag">{{ article.data.tags[0] if article.data.tags else "Kegiatan" }}</span>
           <h3>{{ article.data.title }}</h3>

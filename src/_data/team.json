@@ -1,10 +1,10 @@
 [
-  { "name": "Tri Andika Julia Putra", "role": "Pembina Utama", "avatar": "👨‍🔬", "lead": true },
-  { "name": "Nurlita Anggraini", "role": "Pelatih / Pembina Latih", "avatar": "👩‍🔬", "lead": true },
-  { "name": "Imam Ahmad Sujiwo", "role": "Ketua Umum", "avatar": "🧑‍🔬", "lead": true },
-  { "name": "Ghina Tsurayya", "role": "Wakil Ketua", "avatar": "👩‍💻", "lead": true },
-  { "name": "Naufal Aulia Rahman", "role": "Sekretaris I", "avatar": "🧑‍💼", "lead": false },
-  { "name": "Lesya Nasyifa Adzra", "role": "Sekretaris II", "avatar": "👩‍💼", "lead": false },
-  { "name": "Inayah Syauqi Kamila", "role": "Bendahara I", "avatar": "👩‍💰", "lead": false },
-  { "name": "Nadira Hikmatul Ulya", "role": "Bendahara II", "avatar": "👩‍📊", "lead": false }
+  { "name": "Tri Andika Julia Putra", "role": "Pembina Utama", "lead": true },
+  { "name": "Nurlita Anggraini", "role": "Pelatih / Pembina Latih", "lead": true },
+  { "name": "Imam Ahmad Sujiwo", "role": "Ketua Umum", "lead": true },
+  { "name": "Ghina Tsurayya", "role": "Wakil Ketua", "lead": true },
+  { "name": "Naufal Aulia Rahman", "role": "Sekretaris I", "lead": false },
+  { "name": "Lesya Nasyifa Adzra", "role": "Sekretaris II", "lead": false },
+  { "name": "Inayah Syauqi Kamila", "role": "Bendahara I", "lead": false },
+  { "name": "Nadira Hikmatul Ulya", "role": "Bendahara II", "lead": false }
 ]

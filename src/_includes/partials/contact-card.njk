@@ -1,5 +1,5 @@
 <div class="contact-card reveal">
-  <div class="c-icon">{{ card.icon }}</div>
+  <div class="c-icon">{% set icon = card.icon %}{% include "partials/icon.njk" %}</div>
   <h4>{{ card.title }}</h4>
   {% if card.content|safe %}
   <p>{{ card.content|safe }}</p>

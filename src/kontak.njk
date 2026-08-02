@@ -72,7 +72,11 @@ crumb: "Pendaftaran & Kontak"
               <textarea id="motivation" name="motivation" rows="4" placeholder="Ceritakan singkat apa yang membuatmu tertarik pada KIR..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary" id="registerSubmit">Kirim Pendaftaran →</button>
-            <div class="form-success">✓ Pendaftaran terkirim! Tim KIR akan menghubungimu lewat WhatsApp/email.</div>
+            <div class="form-success">
+              <span class="fs-title">✓ Pendaftaran terkirim!</span>
+              <span class="fs-sub">Tim KIR akan menghubungimu lewat WhatsApp/email. Sambil menunggu, langsung gabung ke grup WhatsApp anggota:</span>
+              <a href="https://chat.whatsapp.com/G9nnBt4ZAThEwV8ZT9mR5C" target="_blank" rel="noopener" class="btn btn-primary">Gabung ke Grup KIR →</a>
+            </div>
             <div class="form-error" role="alert"></div>
             <p class="form-note">Data terkirim langsung ke panitia KIR MAN 2 Kota Bogor.</p>
           </form>
@@ -111,7 +115,7 @@ crumb: "Pendaftaran & Kontak"
     <div class="reveal" style="margin-bottom:32px;">
       <div class="social-links">
         {% for s in contact.social %}
-        <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
+        <a href="{{ s.url }}" target="_blank" rel="noopener">{% set icon = s.icon %}{% include "partials/icon.njk" %}<span>{{ s.label }}</span></a>
         {% endfor %}
       </div>
     </div>
@@ -125,7 +129,7 @@ crumb: "Pendaftaran & Kontak"
           loading="lazy">
         </iframe>
         <div class="map-caption">
-          <span>📍 MAN 2 Kota Bogor — Jl. Raya Pajajaran No. 6, Baranangsiang, Kota Bogor</span>
+          <span>{% set icon = "map" %}{% include "partials/icon.njk" %} MAN 2 Kota Bogor — Jl. Raya Pajajaran No. 6, Baranangsiang, Kota Bogor</span>
           <a href="https://www.openstreetmap.org/?mlat={{ contact.map.lat }}&amp;mlon={{ contact.map.lng }}#map={{ contact.map.zoom }}/{{ contact.map.lat }}/{{ contact.map.lng }}" target="_blank" rel="noopener" class="btn-map-link">
             Buka Peta Lebih Besar ↗
           </a>

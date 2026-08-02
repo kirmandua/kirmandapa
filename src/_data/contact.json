@@ -1,14 +1,16 @@
 {
   "cards": [
-    { "icon": "✉️", "title": "Email Resmi", "content": "<a href=\"mailto:kir@man2kotabogor.sch.id\">kir@man2kotabogor.sch.id</a>" },
-    { "icon": "📍", "title": "Lokasi Sekolah", "content": "Jl. Raya Pajajaran No. 6, Baranangsiang, Kec. Bogor Timur, Kota Bogor, Jawa Barat 16143 — Sekretariat KIR, Gedung Laboratorium" },
-    { "icon": "🕐", "title": "Jam Sekretariat", "content": "Senin & Kamis, pukul 15.00–17.00 WIB, di ruang KIR Gedung B" }
+    { "icon": "mail", "title": "Email Resmi", "content": "<a href=\"mailto:kirman2ktbgr@gmail.com\">kirman2ktbgr@gmail.com</a>" },
+    { "icon": "whatsapp", "title": "WhatsApp Resmi", "content": "<a href=\"https://wa.me/6281219261422?text=kak%2C%20aku%20mau%20menanyakan%20sesuatu%20tentang%20kir\">klik untuk bertanya lewat WhatsApp</a>" },
+    { "icon": "map", "title": "Lokasi Sekolah", "content": "Jl. Raya Pajajaran No. 6, Baranangsiang, Kec. Bogor Timur, Kota Bogor, Jawa Barat 16143 — Sekretariat KIR, Gedung Laboratorium" },
+    { "icon": "clock", "title": "Jam Sekretariat", "content": "Senin & Kamis, pukul 15.00–17.00 WIB, di ruang KIR Gedung B" }
   ],
   "social": [
-    { "label": "📷 Instagram — @kirmandapa", "url": "https://www.instagram.com/kirmandapa/" },
-    { "label": "▶️ YouTube — KIR MAN 2 Kota Bogor", "url": "#" },
-    { "label": "✉️ Kirim Email", "url": "mailto:kir@man2kotabogor.sch.id" },
-    { "label": "🌐 Situs Resmi Madrasah", "url": "https://www.man2kotabogor.sch.id" }
+    { "icon": "instagram", "label": "Instagram — @kirmandapa", "url": "https://www.instagram.com/kirmandapa/" },
+    { "icon": "whatsapp", "label": "WhatsApp KIR", "url": "https://wa.me/6281219261422?text=kak%2C%20aku%20mau%20menanyakan%20sesuatu%20tentang%20kir" },
+    { "icon": "youtube", "label": "YouTube — KIR MAN 2 Kota Bogor", "url": "#" },
+    { "icon": "mail", "label": "Kirim Email", "url": "mailto:kirman2ktbgr@gmail.com" },
+    { "icon": "globe", "label": "Situs Resmi Madrasah", "url": "https://www.man2kotabogor.sch.id" }
   ],
   "timeline": [
     { "year": "2005", "title": "Didirikan pada 16 Februari 2005", "desc": "KIR MAN 2 Kota Bogor resmi berdiri di Bogor di bawah naungan Wakil Kepala Bidang Kesiswaan MAN 2 Kota Bogor." },

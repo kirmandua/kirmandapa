@@ -1,8 +1,8 @@
 [
-  { "icon": "📄", "title": "Format Karya Tulis Ilmiah", "desc": "Templat lengkap struktur KTI: judul, abstrak, BAB I–V, hingga lampiran, sesuai standar lomba nasional." },
-  { "icon": "✍️", "title": "Cara Membuat Abstrak yang Kuat", "desc": "Panduan singkat menyusun abstrak 150–250 kata yang merangkum masalah, metode, dan temuan riset." },
-  { "icon": "📚", "title": "Tata Cara Penyusunan Daftar Pustaka", "desc": "Contoh format sitasi APA & Vancouver, lengkap dengan kesalahan umum yang sering ditemui." },
-  { "icon": "📊", "title": "Templat Poster Penelitian", "desc": "Layout siap edit untuk poster ukuran A1, cocok dipakai saat pameran atau sesi presentasi lomba." },
-  { "icon": "🧾", "title": "Checklist Sebelum Submit Lomba", "desc": "Daftar periksa singkat: kelengkapan berkas, format file, hingga batas ukuran unggahan." },
-  { "icon": "🎤", "title": "Panduan Presentasi & Tanya Jawab Juri", "desc": "Tips menyampaikan hasil riset dalam 7 menit dan menjawab pertanyaan juri dengan percaya diri." }
+  { "icon": "doc", "title": "Format Karya Tulis Ilmiah", "desc": "Templat lengkap struktur KTI: judul, abstrak, BAB I–V, hingga lampiran, sesuai standar lomba nasional." },
+  { "icon": "pen", "title": "Cara Membuat Abstrak yang Kuat", "desc": "Panduan singkat menyusun abstrak 150–250 kata yang merangkum masalah, metode, dan temuan riset." },
+  { "icon": "book", "title": "Tata Cara Penyusunan Daftar Pustaka", "desc": "Contoh format sitasi APA & Vancouver, lengkap dengan kesalahan umum yang sering ditemui." },
+  { "icon": "chart", "title": "Templat Poster Penelitian", "desc": "Layout siap edit untuk poster ukuran A1, cocok dipakai saat pameran atau sesi presentasi lomba." },
+  { "icon": "list", "title": "Checklist Sebelum Submit Lomba", "desc": "Daftar periksa singkat: kelengkapan berkas, format file, hingga batas ukuran unggahan." },
+  { "icon": "mic", "title": "Panduan Presentasi & Tanya Jawab Juri", "desc": "Tips menyampaikan hasil riset dalam 7 menit dan menjawab pertanyaan juri dengan percaya diri." }
 ]

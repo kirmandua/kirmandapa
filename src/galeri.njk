@@ -43,7 +43,7 @@ crumb: "Galeri Karya, Riset & Inovasi"
     <div class="card-grid" style="margin-bottom:12px;">
       {% for p in prototypes %}
       <div class="card reveal">
-        <div class="card-photo"><span>📷 {{ p.photo }}</span></div>
+        <div class="card-photo"><span>{{ p.photo }}</span></div>
         <div class="card-body">
           <span class="card-tag{% if p.tagClass %} {{ p.tagClass }}{% endif %}">{{ p.category }}</span>
           <h3>{{ p.title }}</h3>
@@ -75,7 +75,7 @@ crumb: "Galeri Karya, Riset & Inovasi"
     <div class="poster-grid">
       {% for poster in posters %}
       <div class="poster-item reveal">
-        <div class="poster-photo"><span>📄 {{ poster.label }}</span></div>
+        <div class="poster-photo"><span>{{ poster.label }}</span></div>
         <div class="poster-cap">{{ poster.caption }}</div>
       </div>
       {% endfor %}

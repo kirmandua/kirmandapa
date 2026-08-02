@@ -18,7 +18,7 @@ crumb: "Berita & Kegiatan"
     <div class="blog-grid">
       {% for article in collections.berita | reverse %}
       <div class="card reveal">
-        <div class="card-photo"><span>📷 {{ article.data.thumb if article.data.thumb else "Kegiatan KIR" }}</span></div>
+        <div class="card-photo"><span>{{ article.data.thumb if article.data.thumb else "Kegiatan KIR" }}</span></div>
         <div class="card-body">
           <span class="card-tag{% if article.data.tagClass %} {{ article.data.tagClass }}{% endif %}">{{ article.data.tags[0] if article.data.tags else "Kegiatan" }}</span>
           <h3>{{ article.data.title }}</h3>
@@ -45,7 +45,7 @@ crumb: "Berita & Kegiatan"
     <div class="blog-grid">
       {% for article in contact.sainsPopuler %}
       <div class="card reveal">
-        <div class="card-photo"><span>📷 {{ article.photo }}</span></div>
+        <div class="card-photo"><span>{{ article.photo }}</span></div>
         <div class="card-body">
           <span class="card-tag{% if article.tagClass %} {{ article.tagClass }}{% endif %}">{{ article.category }}</span>
           <h3>{{ article.title }}</h3>
