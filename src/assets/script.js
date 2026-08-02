@@ -78,17 +78,54 @@ document.addEventListener('DOMContentLoaded', () => {
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
-  /* Forms: prevent real submit, show friendly confirmation */
-  document.querySelectorAll('form[data-demo-form]').forEach(form => {
-    form.addEventListener('submit', (e) => {
+  /* Registration form: send to /api/register */
+  const registerForm = document.getElementById('registerForm');
+  if (registerForm) {
+    const submitBtn = registerForm.querySelector('#registerSubmit');
+    const successBox = registerForm.querySelector('.form-success');
+    const errorBox = registerForm.querySelector('.form-error');
+
+    registerForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const successBox = form.querySelector('.form-success');
-      if (successBox) {
+      errorBox.textContent = '';
+      errorBox.classList.remove('show');
+      successBox.classList.remove('show');
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Mengirim…';
+      }
+
+      const formData = new FormData(registerForm);
+      const subjects = formData.getAll('subjects');
+      const interests = formData.getAll('interests');
+      const payload = Object.fromEntries(formData);
+      payload.subjects = subjects;
+      payload.interests = interests;
+
+      try {
+        const res = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await res.json();
+
+        if (!res.ok) throw new Error(result.error || 'Gagal mengirim');
+
+        registerForm.reset();
         successBox.classList.add('show');
         successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } catch (err) {
+        errorBox.textContent = 'Terjadi kesalahan. Coba lagi, atau hubungi kami lewat email.';
+        errorBox.classList.add('show');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Kirim Pendaftaran →';
+        }
       }
-      form.querySelectorAll('input, textarea, select').forEach(f => { if (f.type !== 'submit') f.value = ''; });
     });
-  });
+  }
 
 });

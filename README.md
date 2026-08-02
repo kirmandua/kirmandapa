@@ -58,6 +58,36 @@ Deploy `_site/` ke Netlify, Vercel, atau GitHub Pages. Github-connected auto-dep
 
 Konten statis (pengurus, prestasi, jurnal, FAQ) disimpan sebagai JSON di `src/_data/`. Edit langsung file `.json` untuk memperbarui konten tanpa menyentuh template.
 
+## Formulir Pendaftaran (Supabase)
+
+Formulir di `src/kontak.njk` mengirim data ke endpoint `/api/register` (Vercel Serverless Function) yang menyimpannya ke tabel `registrations` di Supabase.
+
+### Setup database Supabase
+
+1. Buat project baru di [supabase.com](https://supabase.com) (region pilih Singapore untuk latensi terbaik).
+2. Di dashboard, buka **SQL Editor** → **New query**, lalu jalankan:
+
+```sql
+create table registrations (
+  id uuid primary key default gen_random_uuid(),
+  full_name text not null,
+  school text not null,
+  birth_date date,
+  whatsapp text,
+  subjects text[],
+  interests text[],
+  motivation text,
+  created_at timestamptz default now()
+);
+```
+
+3. Buka **Project Settings → API**, salin `Project URL` (jadi `SUPABASE_URL`) dan `anon public key` (jadi `SUPABASE_ANON_KEY`).
+4. (Opsional) Aktifkan RLS → **Authentication → Policies → New Policy** → *Enable insert* untuk role `anon`.
+5. Di **Vercel → Project → Settings → Environment Variables**, tambahkan:
+   - `SUPABASE_URL` = Project URL
+   - `SUPABASE_ANON_KEY` = anon key
+6. Deploy ulang situs. Kiriman form akan muncul di tabel `registrations`.
+
 ## Template
 
 Menggunakan Nunjucks (.njk). Base layout `src/_includes/layouts/base.njk` membungkus semua halaman dengan header/footer. Komponen reusable ada di `src/_includes/partials/`.
